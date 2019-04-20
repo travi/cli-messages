@@ -5,8 +5,10 @@ function writeToStdError(...args) {
   console.error(...args);                       // eslint-disable-line no-console
 }
 
-export function info(message) {
-  writeToStdError(infoIcon, chalk.blue(message));
+export function info(message, {level} = {}) {
+  const coloredMessage = 'secondary' === level ? chalk.grey(message) : chalk.blue(message);
+
+  writeToStdError(infoIcon, coloredMessage);
 }
 
 export function success(message) {

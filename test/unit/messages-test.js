@@ -17,10 +17,24 @@ suite('message', () => {
 
   teardown(() => sandbox.restore());
 
-  test('that the `i` icon is shown with info messages', () => {
-    info(message);
+  suite('info', () => {
+    test('that the `i` icon is shown with info messages', () => {
+      info(message);
 
-    assert.calledWith(console.error, infoIcon, chalk.blue(message));                  // eslint-disable-line no-console
+      assert.calledWith(console.error, infoIcon, chalk.blue(message));                // eslint-disable-line no-console
+    });
+
+    test('that message is blue for a primary-level info message', () => {
+      info(message, {level: 'primary'});
+
+      assert.calledWith(console.error, infoIcon, chalk.blue(message));                // eslint-disable-line no-console
+    });
+
+    test('that message is blue for a secondary-level info message', () => {
+      info(message, {level: 'secondary'});
+
+      assert.calledWith(console.error, infoIcon, chalk.grey(message));                // eslint-disable-line no-console
+    });
   });
 
   test('that the checkmark icon is shown with success messages', () => {
