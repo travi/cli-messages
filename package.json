@@ -53,5 +53,8 @@
     "rollup-plugin-auto-external": "^2.0.0",
     "sinon": "^7.3.2",
     "travis-lint": "^1.0.0"
+  },
+  "dependencies": {
+    "log-symbols": "3.0.0"
   }
 }
