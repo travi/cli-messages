@@ -1,5 +1,7 @@
 # cli-messages
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/travi/cli-messages.svg)](https://greenkeeper.io/)
+
 status messaging for output of CLI applications
 
 <!-- status badges -->
