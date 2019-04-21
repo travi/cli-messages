@@ -1,7 +1,5 @@
 # cli-messages
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/travi/cli-messages.svg)](https://greenkeeper.io/)
-
 status messaging for output of CLI applications
 
 <!-- status badges -->
@@ -27,6 +25,7 @@ $ npm install @travi/cli-messages --save
 [![Commitizen friendly][commitizen-badge]][commitizen-link]
 [![semantic-release][semantic-release-badge]][semantic-release-link]
 [![PRs Welcome][PRs-badge]][PRs-link]
+[![Greenkeeper badge](https://badges.greenkeeper.io/travi/cli-messages.svg)](https://greenkeeper.io/)
 
 ### Dependencies
 
