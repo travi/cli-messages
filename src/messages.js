@@ -6,7 +6,7 @@ function writeToStdError(...args) {
 }
 
 export function info(message, {level} = {}) {
-  const coloredMessage = 'secondary' === level ? chalk.grey(message) : chalk.blue(message);
+  const coloredMessage = 'secondary' === level ? chalk.grey(message) : chalk.cyan(message);
 
   writeToStdError(infoIcon, coloredMessage);
 }
