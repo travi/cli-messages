@@ -1,8 +1,10 @@
 import {info as infoIcon, success as successIcon, warning as warningIcon, error as errorIcon} from 'log-symbols';
 import chalk from 'chalk';
+
 import {assert} from 'chai';
 import sinon from 'sinon';
 import any from '@travi/any';
+
 import {info, success, warn, error} from '../../src/messages';
 
 suite('message', () => {
@@ -53,5 +55,11 @@ suite('message', () => {
     error(message);
 
     assert.calledWith(console.error, errorIcon, chalk.red(message));                  // eslint-disable-line no-console
+  });
+
+  test('that message is grey for a secondary-level error message', async () => {
+    error(message, {level: 'secondary'});
+
+    assert.calledWith(console.error, errorIcon, chalk.grey(message));                  // eslint-disable-line no-console
   });
 });

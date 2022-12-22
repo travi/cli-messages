@@ -19,6 +19,6 @@ export function warn(message) {
   writeToStdError(warningIcon, chalk.keyword('orange')(message));
 }
 
-export function error(message) {
-  writeToStdError(errorIcon, chalk.red(message));
+export function error(message, {level} = {}) {
+  writeToStdError(errorIcon, 'secondary' === level ? chalk.grey(message) : chalk.red(message));
 }
