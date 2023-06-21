@@ -3,19 +3,13 @@
   "description": "status messaging for output of CLI applications",
   "license": "MIT",
   "version": "0.0.0-semantically-released",
-  "main": "lib/index.cjs.js",
-  "module": "lib/index.es.js",
-  "sideEffects": false,
-  "publishConfig": {
-    "access": "public"
-  },
-  "files": [
-    "lib/"
-  ],
+  "author": "Matt Travi <npm@travi.org> (https://matt.travi.org/)",
   "repository": "travi/cli-messages",
   "bugs": "https://github.com/travi/cli-messages/issues",
   "homepage": "https://npm.im/@travi/cli-messages",
-  "author": "Matt Travi <npm@travi.org> (https://matt.travi.org/)",
+  "main": "lib/index.cjs.js",
+  "module": "lib/index.es.js",
+  "sideEffects": false,
   "scripts": {
     "test": "npm-run-all --print-label --parallel lint:* --parallel test:*",
     "test:unit": "cross-env NODE_ENV=test c8 run-s test:unit:base",
@@ -29,7 +23,19 @@
     "build:js": "rollup --config",
     "watch": "run-s 'build:js -- --watch'",
     "prepack": "run-s build",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "lint:publish": "publint"
+  },
+  "files": [
+    "lib/"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "dependencies": {
+    "chalk": "^4.0.0",
+    "log-symbols": "4.1.0"
   },
   "devDependencies": {
     "@babel/register": "7.22.5",
@@ -45,15 +51,12 @@
     "husky": "8.0.3",
     "mocha": "10.2.0",
     "npm-run-all": "4.1.5",
+    "publint": "0.1.12",
     "remark-cli": "11.0.0",
     "remark-preset-lint-travi": "5.0.2",
     "rimraf": "5.0.1",
     "rollup": "3.25.1",
     "rollup-plugin-auto-external": "2.0.0",
     "sinon": "15.2.0"
-  },
-  "dependencies": {
-    "chalk": "^4.0.0",
-    "log-symbols": "4.1.0"
   }
 }
