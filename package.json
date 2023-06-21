@@ -35,7 +35,7 @@
   },
   "dependencies": {
     "chalk": "^4.0.0",
-    "log-symbols": "4.1.0"
+    "log-symbols": "5.1.0"
   },
   "devDependencies": {
     "@babel/register": "7.22.5",
