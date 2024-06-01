@@ -43,7 +43,7 @@
     "@travi/any": "3.1.2",
     "@travi/babel-preset": "3.0.124",
     "@travi/eslint-config-travi": "1.8.8",
-    "ban-sensitive-files": "1.10.2",
+    "ban-sensitive-files": "1.10.3",
     "c8": "9.1.0",
     "chai": "4.4.1",
     "commitlint-config-travi": "1.4.50",
