@@ -52,15 +52,15 @@ $ npm test
 
 [npm-link]: https://www.npmjs.com/package/@travi/cli-messages
 
-[npm-badge]: https://img.shields.io/npm/v/@travi/cli-messages.svg
+[npm-badge]: https://img.shields.io/npm/v/@travi/cli-messages?logo=npm
 
 [license-link]: LICENSE
 
-[license-badge]: https://img.shields.io/github/license/travi/cli-messages.svg
+[license-badge]: https://img.shields.io/github/license/travi/cli-messages.svg?logo=opensourceinitiative
 
 [coverage-link]: https://codecov.io/github/travi/cli-messages
 
-[coverage-badge]: https://img.shields.io/codecov/c/github/travi/cli-messages.svg
+[coverage-badge]: https://img.shields.io/codecov/c/github/travi/cli-messages?logo=codecov
 
 [commit-convention-link]: https://conventionalcommits.org
 
